@@ -8,6 +8,8 @@ class CategoryManager extends Component
 {
     public function render()
     {
-        return view('livewire.categories.category-manager');
+        return view('livewire.categories.category-manager')->layout('components.layouts.app', [
+            'title' => __('app.categories')
+        ]);
     }
 }
